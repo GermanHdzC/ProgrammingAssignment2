@@ -1,3 +1,6 @@
+
+rm(list = ls())
+
 #makeCacheMatrix consist of set, get, set inv, get inv
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL #Initializing inverse as NULL
@@ -27,3 +30,5 @@ cacheSolve <- function(x, ...) {
   x$setInverse(inv)
   inv
 }
+
+ 
